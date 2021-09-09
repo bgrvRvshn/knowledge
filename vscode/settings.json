@@ -1,0 +1,307 @@
+{
+  // Путь удалённого имени хоста на платформу для этого.
+  // Допустимые значения: `linux`, `macOS`, `windows`
+  "remote.SSH.remotePlatform": {
+    "www-shop-01.dev.erkapharm.ru": "linux"
+  },
+  // Настройка терминала для работы в Windows
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\bash.exe",
+  // Символ конца строки по умолчанию.
+  //  - \n: LF
+  //  - \r\n: CRLF
+  //  - auto: используется специфичный конец */
+  "files.eol": "\n",
+  // Количество пробелов
+  "editor.tabSize": 2,
+  // Настройка возможности связывания шрифта
+  "editor.fontLigatures": true,
+  // Семейство шрифтов
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  // Начертание шрифта
+  "editor.fontWeight": 400,
+  // Размер шрифта
+  "editor.fontSize": 12,
+  // Способ отображения символов
+  //  - none
+  //  - boundary: за исключением отдельных пробелов между словами.
+  //  - selection: только в выделенном тексте.
+  //  - trailing: только последних символов пробела.
+  //  - all: всегда
+  "editor.renderWhitespace": "selection",
+  // Должен ли редактор отображать управляющие символы
+  "editor.renderControlCharacters": true,
+  // Семейство шрифтов терминала
+  "terminal.integrated.fontFamily": "monospace",
+  // Настройка шаблонов для исключения файлов
+  // и папок в файловом поиске и быстрого открытия
+  "search.exclude": {
+    "**.svg": true
+  },
+  // Что будет отображаться при запуске.
+  //  - none: ничего
+  //  - welcomePage: страница приветствия.
+  //  - readme: README
+  "workbench.startupEditor": "newUntitledFile",
+  // Автоматическое открытие файла настроек
+  "workbench.settings.useSplitJSON": true,
+  // Проставление пустой строки в конце файла
+  "files.insertFinalNewline": true,
+  // Удаление пробельных символов на концах строк
+  "files.trimFinalNewlines": true,
+  // Удаление пробельных символов на пустых строках
+  "files.trimTrailingWhitespace": true,
+  // Перенос строк при достижения границ рабочей области экрана
+  "editor.wordWrap": "off",
+  // Алерты с предупреждениями при удалении
+  // и перетаскивании файлов и директорий
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": true,
+  // Зум колесиком мыши
+  "editor.mouseWheelZoom": false,
+  // Включить/выключить хлебные крошки
+  "breadcrumbs.enabled": true,
+  // Тема значков
+  // Значение null, чтобы не показывать значков
+  //  - null: значков файлов нет
+  //  - vs-minimum
+  //  - vs-seti
+  //  - vscode-icons
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  // Путь к файлу конфигурации prettier
+  "prettier.configPath": ".prettierrc.json",
+  // Языковые идентификаторы, которые должны быть проверены ESLint
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescriptreact",
+    "typescript"
+  ],
+  // Действия редактора при сохранении
+  "editor.codeActionsOnSave": {
+    // Форматирование кода по eslint
+    "source.fixAll.eslint": true
+  },
+  // Положение боковой панели
+  //  - 'left'
+  //  - 'right'
+  "workbench.sideBar.location": "right",
+  // Отображение иконки значков хлебных крошек
+  "breadcrumbs.icons": false,
+  // Ширина вертикальной полосы прокрутки.
+  "editor.scrollbar.verticalScrollbarSize": 7,
+  // Ширина мини-карты
+  "editor.minimap.maxColumn": 80,
+  // Отображать ли пробельные символы в изменениях git
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Автоматическое обновление путей импорта файла
+  //  - prompt: подсказка при каждом переименовании
+  //  - always: всегда автоматически обновлять
+  //  - never: никогда не переименовывайте пути
+  // JAVASCRIPT
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  // TYPESCRIPT
+  "typescript.updateImportsOnFileMove.enabled": "never",
+
+/*
+  // АССОЦИАЦИИ ФАЙЛОВ
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  // Профиль для указанного синтаксиса
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  // Включает Emmet в языках, не поддерживаемых по умолчанию
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Аббревиатуры Emmet расширяются при нажатии TAB
+  "emmet.triggerExpansionOnTab": true,
+*/
+
+  // JAVASCRIPT
+  "[javascript]": {
+    // Форматтер по умолчанию
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // TYPESCRIPT
+  "[typescript]": {
+    // Форматтер по умолчанию
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JSON
+  "[jsonc]": {
+    // Форматтер по умолчанию
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // TYPESCRIPTREACT
+  "[typescriptreact]": {
+    // Форматтер по умолчанию
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // CPELL
+  // Языки проверки правописания
+  "cSpell.language": "en, ru",
+  // Пользовательские слова для добавления в словарь
+  "cSpell.userWords": [
+    "CSRF",
+    "Helvetica",
+    "MDLG",
+    "Placemark",
+    "Promo",
+    "UISC",
+    "XLXXL",
+    "XSRF",
+    "XSSM",
+    "birthdate",
+    "camelcase",
+    "csstype",
+    "dateslot",
+    "deliverypickup",
+    "hookform",
+    "in",
+    "laquo",
+    "ldquo",
+    "linebreak",
+    "multiline",
+    "no",
+    "ondemand",
+    "paren",
+    "parens",
+    "plusplus",
+    "prettierrc",
+    "raquo",
+    "rdquo",
+    "recaptcha",
+    "reduxjs",
+    "scrollable",
+    "space",
+    "unoptimized",
+    "unslick",
+    "Супераптека",
+    "даркстора",
+    "дарксторе",
+    "парсинга",
+    "раскомментировать"
+  ],
+
+  // TURBO CONSOLE LOG
+  // Тип оборачивающих кавычек
+  //  - Двойные кавычки
+  //  - Одиночные кавычки
+  //  - Обратная кавычки
+  "turboConsoleLog.quote": "'",
+  // Включать ли имя файла и номер строки
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  // Вставлять или нет название выбранной переменной
+  "turboConsoleLog.insertEnclosingClass": false,
+
+  // VSCODE-ICONS
+  // Стрелки папок в Explorer.
+  "vsicons.presets.hideExplorerArrows": true,
+  // Официальный значок TS
+  "vsicons.presets.tsOfficial": true,
+  // Официальный значок JS
+  "vsicons.presets.jsOfficial": true,
+  // Официальный значок JSON
+  "vsicons.presets.jsonOfficial": true,
+  // Cообщение новой версии
+  "vsicons.dontShowNewVersionMessage": true,
+
+  // GITLENS
+  // Предоставлять ли объективы Git кода
+  "gitlens.codeLens.enabled": false,
+  // Следует ли по умолчанию давать пометку для текущей строки.
+  "gitlens.currentLine.enabled": false,
+  // Следует ли предусматривать какие-либо отклонения
+  "gitlens.hovers.enabled": false,
+  // Следует ли предоставлять активный режим GitLens в строке состояния
+  "gitlens.mode.statusBar.enabled": false,
+
+  // Цветовая тема
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+
+  // BETTER ALIGN
+  // Будет выравнивать только линии с тем же отступом и не изменит отступ.
+  "alignment.indentBase": "dontchange",
+  "alignment.surroundSpace": {
+    "colon"      : [1, 1], // Первое число указывает, сколько места добавить слева, может быть отрицательным.
+                             // Второе число - это сколько пространства справа, может быть отрицательным.
+    "comment"    : 2         // Количество места между комментарием и кодом.
+                             // Если значение отрицательное, то комментарий не будет выравнин.
+  },
+
+  // LIVE SHARE
+  // "liveshare.audio.startCallOnShare": true,
+
+  // Определяет, включено ли редактирование связанных тегов.
+  "editor.linkedEditing": true,
+  // Контролирует формат метки для вкладок.
+  //  - default: показать имя файла.
+  // Когда два файла имеют одно и то же имя в одной группе, добавляются разделы.
+  //  - short: -//-, за которым следует имя каталога.
+  //  - medium: -//-, за которым следует его путь относительно папки.
+  //  - long: -//- и его абсолютный путь.
+  "workbench.editor.labelFormat": "short",
+  // Контролирует размер закрепленных вкладок.
+  //  - normal: наследует внешний вид неприкленных вкладок.
+  //  - compact: будет отображаться в компактной форме.
+  //  - shrink: закладка уменьшится до компактного фиксированного размера.
+  "workbench.editor.pinnedTabSizing": "shrink",
+  // Контролирует размер вкладок.
+  //  - fit: всегда держит вкладки достаточно большими.
+  //  - shrink: позволить вкладкам становиться меньше.
+  "workbench.editor.tabSizing": "shrink",
+
+  // TODO-TREE
+  // Какие теги считать TODO
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "REVIEW",
+    "NOTE",
+    "XXX",
+    "MOCK"
+  ],
+  // Группировка тегов для применения одинаковых настроек
+  "todo-tree.general.tagGroups": {
+    "TODO": [
+      "TODO",
+      "REVIEW",
+    ]
+  },
+  // Дефолтные натройки
+  "todo-tree.highlights.defaultHighlight": {
+    "gutterIcon": true
+  },
+  // Кастомизация типов TODO
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check-circle",
+      "iconColour": "orange",
+      "foreground": "orange",
+      "opacity": 0,
+      "type": "text-and-comment",
+    },
+    "NOTE": {
+      "icon": "file",
+      "iconColour": "#6A8759",
+      "foreground": "#6A8759",
+      "opacity": 50,
+      "type": "text-and-comment",
+    },
+    "FIXME": {
+      "foreground": "Red",
+      "iconColour": "red",
+      "opacity": 0,
+      "type": "tag-and-comment",
+    },
+    "MOCK": {
+      "icon": "history",
+      "iconColour": "white",
+    }
+  },
+}
