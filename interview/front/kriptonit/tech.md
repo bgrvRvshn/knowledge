@@ -11,11 +11,14 @@ console.log(typeof NaN) // 'number'
 isNaN()
 
 // Что выведет консоль?
-
 const obj = {};
 const arr = [];
 
 console.log(typeof arr === typeof obj) // true
+
+// Как убедиться что значение именно массив?
+Array.isArray(arr)
+arr instanceof Array
 
 // Удалить из массива дубликаты
 const numbers = [1, 0, 5, 5, 1, 1, 3, 5, 1, 1, 1, 4, 5, 1, 1, 4];
