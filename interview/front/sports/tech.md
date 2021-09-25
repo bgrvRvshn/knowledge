@@ -1,3 +1,16 @@
+Почему этот код не работает:
+```javascript
+import {tooLongString} from 'sting'
+
+function whatString(string) {
+   if (tooLongString(string)) {
+      string.slice(2)
+   }
+}
+```
+1. Строки неизменяемы
+2. Нет ключевого слова `return`
+
 Необходимо из двух массивов получить один массив `result`. В котором элементы 1-го массива `sites` буду включены в элементы 2-го массива `pages` по соответствующим `id`.
 ```javascript
 // Первый массив
