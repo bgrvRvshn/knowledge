@@ -1,6 +1,6 @@
 ```bash
     -------------------------
-## Просмотр параметров конфигурации ##
+## Просмотр параметров конфигурации
 npm config ls -l
 
     -------------------------
@@ -88,8 +88,8 @@ npm view | v [package-name]
 ## Запуск скрипта/выполнение команды
 npm run [script]
 
-# пример
-# package.json: "scripts": { "dev": "nodemon server.js" }
+# пример package.json:
+# "scripts": { "dev": "nodemon server.js" }
 npm run dev
 
     -------------------------
